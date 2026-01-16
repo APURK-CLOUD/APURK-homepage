@@ -14,15 +14,8 @@
         }
 
         body {
-            /* font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-            background: #fff;
-            color: #1d1d1f;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden; */
             font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
-            background: #fff;
+            background: #f5f5f7;
             color: #1d1d1f;
             overflow-x: hidden;
         }
@@ -38,15 +31,6 @@
         }
 
         .nav-content {
-            /* max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0 22px;
-            height: 70px;
-            /* position: relative; 
-            gap:50px; */
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
@@ -58,21 +42,12 @@
         }
 
         .nav-logo {
-            /* height: clamp(35px, 6vh, 35px);
-            display: flex;
-            height: 45px;
-            align-items: center;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%); */
             height: 45px;
             display: flex;
             align-items: center;
         }
 
         .nav-logo img {
-            /* height: clamp(45px, 1100vh, 45px);
-            width: auto; */
             height:45px;
             width: auto;
         }
@@ -123,6 +98,11 @@
             padding-top: clamp(80px, 15vh, 100px);
             transition: right 0.4s ease;
             z-index: 999;
+            display: flex;
+            gap: 35px;
+            list-style: none;
+            align-items: center;
+        
         }
 
         .nav-links.active {
@@ -232,12 +212,13 @@
 
         .social-card {
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            /* backdrop-filter: blur(10px); */
             border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: clamp(15px, 3vw, 20px);
+            /* border-radius: clamp(50px, 12vw, 50px); */
             padding: clamp(30px, 5vh, 40px) clamp(15px, 3vw, 20px);
             text-decoration: none;
-            color: #fff;
+            border-radius: 20px;
+            color: #black;
             transition: all 0.4s ease;
             opacity: 0;
             display: flex;
@@ -252,7 +233,7 @@
 
         .social-card:hover {
             transform: translateY(-10px) scale(1.05);
-            background: #f5f5f7;
+            background: #fff;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
@@ -278,6 +259,7 @@
         .social-name {
             font-size: clamp(16px, 2.5vw, 20px);
             font-weight: 600;
+            color:white;
         }
 
         .email-section {
@@ -311,20 +293,24 @@
 
         /* LinkedIn Blue */
         .social-card.linkedin:hover {
-            background: #0077B5;
-            color: #fff;
-            border-color: #0077B5;
+            background: black;
+             color: rgb(172, 33, 33);
+            border-color: #fff;
+            box-shadow: 0 25px 50px rgba(64, 63, 63, 0.15);
+
         }
 
         .social-card.linkedin:hover svg {
             fill: #fff;
+            color: #1d1d1f;
         }
 
         /* Instagram Gradient */
         .social-card.instagram:hover {
-            background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCB045);
-            color: #fff;
-            border-color: #833AB4;
+            background: black;
+            /* background: black; */
+            color:white;
+            border-color: #fff;
         }
 
         .social-card.instagram:hover svg {
@@ -333,9 +319,9 @@
 
         /* WhatsApp Green */
         .social-card.whatsapp:hover {
-            background: #25D366;
-            color: #fff;
-            border-color: #25D366;
+            background: black;
+            color: white;
+            border-color: #fff;
         }
 
         .social-card.whatsapp:hover svg {
